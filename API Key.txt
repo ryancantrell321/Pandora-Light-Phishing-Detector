@@ -1,0 +1,2 @@
+URLSCAN_API_ENDPOINT = "https://urlscan.io/api/v1/scan/"
+Key: 648b27e4-8f59-4f65-be57-401356fc7afb

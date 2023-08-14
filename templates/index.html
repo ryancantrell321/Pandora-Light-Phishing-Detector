@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pandora Light: Phishing Detector</title>
+</head>
+    
+<body style="background-color: #00051c;
+             font-family: sans-serif; 
+             color: white">
+    
+    <center>
+        
+        <h1>
+            <a href="https://ryancantrell321.pythonanywhere.com">
+            
+                <img src="https://i.ibb.co/frJfvpG/logo.png" 
+                     
+                     alt="Pandora Light Web Phishing Detector"
+                     style="width: 350px; height: auto;">
+                
+            </a>
+        </h1>
+        
+    </center>
+
+<!-- Detection Algorithm -->    
+     <hr style="color: bisque">
+    <center>
+                {% if result is not none %}
+        
+        <h2 style="font-family: cursive; font-size: 30px;">DETECTION RESULT:     
+        
+        </h2>
+        
+        {% if result %}
+        
+        <p style="color: darkred; font-size: 20px;">
+            <strong>
+                THE PROVIDED SITE/IP ADDRESS IS MALICIOUS
+            </strong></p>
+        
+        {% else %}
+        
+            <p style="color: darkgreen; font-size: 20px;">
+        <strong>
+            THE PROVIDED SITE/IP ADDRESS IS NOT MALICIOUS
+        </strong></p>
+        
+        {% endif %}
+        
+        {% else %}
+        {% if not correct_input %}
+          <p  class="error-msg"; style="color: skyblue; font-size: 20px;">
+        <strong>
+            IP ADDRESSES AND TOP-LEVEL DOMAINS ARE ACCEPTED ONLY!
+        </strong></p>
+        {% endif %}
+        {% endif %}
+    </center>
+    
+    <!-- input fields -->
+      
+    <br>
+    <br>
+    <br>
+    <hr style="color: bisque">
+    
+    
+        
+        <strong>
+        <p style = "color: yellowgreen">
+            
+            ENTER THE URL OR THE IP ADDRESS OF THE WEBSITE TO IDENTIFY IF IT IS A MALICIOUS OR A NORMAL WEBSITE:
+        </p>
+            </strong>
+    
+        <p style="color: crimson">
+        THE URL MUST BE IN THE FORMAT "X.COM". HTTPS/HTTP and WWW have been predefined!
+        </p>
+            
+            
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    
+    <center>
+    <form action="/"
+          method="post">
+        
+        <label for="URL">
+        <strong>
+            Enter URL or the IP Address:
+            <br>
+            <br>
+            </strong>   
+            
+        </label>
+        
+        <input type="text" id="URL" name="url" required style="width: 400px; height: 25px; background-color: #cccccc ">
+        
+        <br>
+        <br>
+        
+        
+        <input type="submit" value="Proceed ->" style="background-color: darkolivegreen; width: 200px; height: 40px; font-family: monospace; font-size: 18px; color: azure">
+            
+        </form>
+    
+    </center>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="color: bisque">
+    
+    <!-- Copyright -->
+    <center>
+    <p style="color: beige">
+        Copyright © 2023, <strong> <a href="https://github.com/ryancantrell321"> @RyanCantrell321</a></strong> and <strong><a href="https://facebook.com/pandoradynamics22"></a>Pandora Dynamics' </strong> IT Division. All Rights Reserved
+        <br>
+        
+         <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://ryancantrell321.pythonanywhere.com">Pandora Light: Phishing Detector</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://instagram.com/ryancantrell321">Farhan Nadim Iqbal (Omi)</a>, <a href = "https://instagram.com/pandoradynamics22">Pandora Dynamics</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+        
+       
+    </center>
+    
+</body>
+</html>
